@@ -1,0 +1,43 @@
+{
+  "name": "icasei",
+  "version": "1.0.0",
+  "description": "Teste de Front-End para iCasei",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanneguerra/teste-front-end.git"
+  },
+  "author": "Giovanne Guerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovanneguerra/teste-front-end/issues"
+  },
+  "homepage": "https://github.com/giovanneguerra/teste-front-end#readme",
+  "keywords": "gulp",
+    "devDependencies":{
+        "gulp": "*",
+        "gulp-plumber": "*",
+        "gulp-rename": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-sass": "*",
+        "gulp-autoprefixer": "*",
+        "es6-promise": "*",
+        "gulp-csscomb": "*",
+        "gulp-merge-media-queries": "*",
+        "gulp-csslint": "*",
+        "gulp-clean-css": "*",
+        "gulp-browserify": "*",
+        "gulp-uglify": "*",
+        "gulp-concat": "*",
+        "gulp-imagemin": "*",
+        "gulp-cache": "*",
+        "gulp-iconfont": "*",
+        "gulp-consolidate": "*",
+        "lodash": "*",
+        "browser-sync": "*",
+        "gulp-notify": "*"
+    }
+}

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+ $poppings: 'Poppins', sans-serif;
+ ::selection{
+     background: rgb(143, 0, 34);
+ }
+
+ body, input, button{
+     font-family: $poppings;
+ }

@@ -1,0 +1,63 @@
+body{
+    background-size: cover;
+    background: rgb(27, 24, 24) no-repeat center center fixed;
+    height: 100%;
+}
+ .hero{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 70vh;
+ }
+ .hero__title{
+    color: rgb(143, 0, 34);
+    text-align: center;
+    font-size: 5em;
+    font-weight: 500;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    line-height: 100%;
+    text-shadow:
+      -1px -1px 1px #111,
+      2px 2px 1px #363636;
+ }
+ .hero__container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ input:focus::-webkit-input-placeholder { color: transparent;}
+ input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+.hero__search{
+    text-align: center;
+    width: 300px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid rgb(143, 0, 34);
+    margin: 5vh 0;
+    color: rgb(167, 209, 196);
+    &:focus{
+        border-bottom-color: rgb(196, 4, 50);
+    }
+    &::placeholder{
+        color: rgb(137, 170, 160);
+    }
+}
+.hero__btn{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: rgb(143, 0, 34);
+    border: 1px solid rgb(143, 0, 34);
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    color: rgb(137, 170, 160);
+    &:hover{
+        background-color: rgb(196, 4, 50);
+        color: rgb(167, 209, 196);
+    }
+}

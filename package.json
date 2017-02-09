@@ -1,43 +1,23 @@
 {
   "name": "icasei",
-  "version": "1.0.0",
-  "description": "Teste de Front-End para iCasei",
-  "main": "application.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/giovanneguerra/teste-front-end.git"
-  },
+  "version": "0.0.1",
+  "description": "Teste de Front-End iCaesei",
   "author": "Giovanne Guerra",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/giovanneguerra/teste-front-end/issues"
-  },
-  "homepage": "https://github.com/giovanneguerra/teste-front-end#readme",
-  "keywords": "gulp",
-    "devDependencies":{
-        "gulp": "*",
-        "gulp-plumber": "*",
-        "gulp-rename": "*",
-        "gulp-sourcemaps": "*",
-        "gulp-sass": "*",
-        "gulp-autoprefixer": "*",
-        "es6-promise": "*",
-        "gulp-csscomb": "*",
-        "gulp-merge-media-queries": "*",
-        "gulp-csslint": "*",
-        "gulp-clean-css": "*",
-        "gulp-browserify": "*",
-        "gulp-uglify": "*",
-        "gulp-concat": "*",
-        "gulp-imagemin": "*",
-        "gulp-cache": "*",
-        "gulp-iconfont": "*",
-        "gulp-consolidate": "*",
-        "lodash": "*",
-        "browser-sync": "*",
-        "gulp-notify": "*"
-    }
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }

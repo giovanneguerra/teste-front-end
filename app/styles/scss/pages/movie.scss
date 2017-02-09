@@ -1,0 +1,40 @@
+.movie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.movie__container{
+    text-align: center;
+    color: white;
+}
+.movie__title{
+    font-size: 3.2em;
+    font-weight: 600;
+}
+.movie__img{
+    width: 300px;
+}
+.movie__text{
+    text-transform: capitalize;
+}
+.movie__plot {
+    max-width: 550px;
+}
+.return{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+.return__btn{
+    @extend .hero__btn;
+    align-items: center;
+}
+@media screen and (min-width: 768px){
+    .movie__img{
+        width: 350px;
+    }
+    .return{
+        margin: 2%;
+    }
+}

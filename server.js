@@ -4,7 +4,6 @@ var path = require('path');
 var chalk = require('chalk');
 var axios = require('axios');
 
-app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + "/app/index.html"));

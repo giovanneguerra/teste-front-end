@@ -87,6 +87,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 }
 .results__btn{
     @extend .hero__btn;
+    max-width: 298px;
 }
 
 @media screen and (orientation: landscape){

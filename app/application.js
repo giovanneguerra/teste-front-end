@@ -10,85 +10,45 @@ var results = $('#results');
 var movie = $("#btn-movie");
 
 
-$(search_field).keypress(function(e) {
+
+$(search_field).keypress(function(e){
     if(e.which == 13){
         e.preventDefault();
-        console.log(search_field.val());
         $(submit).trigger('click');
     }
 });
 
+var $loading = $('#loadingDiv').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
 //Templating
 $(submit).click(function(){
     var nomeFilme = search_field.val().replace(/ /g, "+");
-    console.log(nomeFilme);
     $(function() {
 
         var app = {
 
             init: function() {
                 app.loadData();
-                app.filterChange();
             },
 
             loadData: function() {
                 $.getJSON('http://www.omdbapi.com/?s=' + nomeFilme).done(function(json) {
                     allData = json;
-                    app.loadIndustryGrid(allData);
+                    app.loadGrid(allData);
                 });
             },
 
-            loadIndustryGrid: function() {
+            loadGrid: function() {
                 $.get('templates/template.html', function(template) {
                     var rendered = Mustache.render(template, allData);
                     $('#results').html(rendered);
                 });
-            },
-
-            filterChange: function() {
-                $('#filter-industry').change(function() {
-                    var selectedIndustry = $(this).val();
-                    app.applyFilter(selectedIndustry);
-                });
-            },
-
-            applyFilter: function(selectedIndustry) {
-                var $industry = $('#industry-grid-container').find('.industry');
-
-                $industry.each(function(i, val) {
-                    var $industryData = $(this).data('industry');
-                    if ($industryData.indexOf(selectedIndustry) >= 0 || selectedIndustry === '') {
-                        $(this).show();
-                    } else {
-                        $(this).hide();
-                    }
-                });
-                if ($.browser.chrome) {
-                    $('.industry-container').masonry('layout');
-                }
-            },
-
-            filterChange2: function() {
-                $('#filter-industry2').change(function() {
-                    var selectedIndustry2 = $(this).val();
-                    app.applyFilter2(selectedIndustry2);
-                });
-            },
-
-            applyFilter2: function(selectedIndustry) {
-                var $industry = $('#industry-grid-container').find('.industry');
-
-                $industry.each(function(i, val) {
-                    var $industryData = $(this).data('industry');
-                    if ($industryData.indexOf(selectedIndustry) >= 0 || selectedIndustry === '') {
-                        $(this).show();
-                    } else {
-                        $(this).hide();
-                    }
-                });
-                if ($.browser.chrome) {
-                    $('.industry-container').masonry('layout');
-                }
             }
 
         };

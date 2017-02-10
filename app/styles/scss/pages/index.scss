@@ -1,4 +1,8 @@
 //Hero
+$mash_red: rgb(143, 0, 34);
+$hover_white: rgb(167, 209, 196);
+$mash_white: rgb(137, 170, 160);
+$hover_red: rgb(196, 4, 50);
 body{
     background-size: cover;
     background: rgb(27, 24, 24) no-repeat center center fixed;
@@ -11,7 +15,7 @@ body{
      height: 100vh;
  }
  .hero__title{
-    color: rgb(143, 0, 34);
+    color: $mash_red;
     text-align: center;
     font-size: 5em;
     font-weight: 500;
@@ -37,30 +41,30 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
     outline: 0;
     border: 0;
     background: transparent;
-    border-bottom: 2px solid rgb(143, 0, 34);
+    border-bottom: 2px solid $mash_red;
     margin: 5vh 0;
-    color: rgb(167, 209, 196);
+    color: $hover_white;
     &:focus{
-        border-bottom-color: rgb(196, 4, 50);
+        border-bottom-color: $hover_red;
     }
     &::placeholder{
-        color: rgb(137, 170, 160);
+        color: $mash_white;
     }
 }
 .hero__btn{
     display: flex;
     justify-content: center;
     width: 300px;
-    background-color: rgb(143, 0, 34);
-    border: 1px solid rgb(143, 0, 34);
+    background-color: $mash_red;
+    border: 1px solid $mash_red;
     border-radius: 3px;
     outline: 0;
     cursor: pointer;
-    color: rgb(137, 170, 160);
+    color: $mash_white;
     text-decoration: none;
     &:hover{
-        background-color: rgb(196, 4, 50);
-        color: rgb(167, 209, 196);
+        background-color: $hover_red;
+        color: $hover_white;
     }
     &:visited{
         text-decoration: none;

@@ -15,21 +15,6 @@ app.get('/movie', function(req, res){
     app.use("/", express.static(__dirname + "/app/"));
 });
 
-app.get('/test', function(req, res){
-    res.render('views/teste', {user:"John Smith"});
-});
-
-// app.get('/results', function(req, res){
-//     var nomeFilme = req.query.q;
-//     axios.get("http://www.omdbapi.com/",
-//         params:{
-//             s: nomeFilme
-//         }
-//     ).then(function(obj){
-//         console.log(obj);
-//     });
-// });
-
 
 app.listen(3030, function(){
     console.log(chalk.bgGreen.white.bold("Working!!"));

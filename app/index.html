@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Movie Mash</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
       <main class="hero">
@@ -11,11 +11,11 @@
               <h1 class="hero__title">Movie Mash</h1>
               <form id="search-film">
                   <input class="hero__search" type="text" id="search-film-input" placeholder="Procure seu filme">
-                  <button class="hero__btn" type="submit" id="search-film-submit">Buscar</button>
+                  <a class="hero__btn" data-scroll href="#results" id="search-film-submit">Buscar</a>
               </form>
           </div>
       </main>
-      <section class="results">
+      <section class="results" id="results">
           <div class="results__container">
              <div class="results__item">
                  <img src="/images/the-terminator.jpg" alt="Terminator" class="results__img">

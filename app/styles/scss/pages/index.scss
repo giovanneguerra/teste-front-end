@@ -8,7 +8,7 @@ body{
      display: flex;
      align-items: center;
      justify-content: center;
-     height: 70vh;
+     height: 100vh;
  }
  .hero__title{
     color: rgb(143, 0, 34);
@@ -57,9 +57,16 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
     outline: 0;
     cursor: pointer;
     color: rgb(137, 170, 160);
+    text-decoration: none;
     &:hover{
         background-color: rgb(196, 4, 50);
         color: rgb(167, 209, 196);
+    }
+    &:visited{
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
     }
 }
 //Results

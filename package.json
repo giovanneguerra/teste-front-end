@@ -5,7 +5,8 @@
   "author": "Giovanne Guerra",
   "dependencies": {
     "axios": "^0.15.3",
-    "ejs": "^2.5.5"
+    "ejs": "^2.5.5",
+    "express": "^4.14.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.7",

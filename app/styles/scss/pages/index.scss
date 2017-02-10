@@ -80,7 +80,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
     padding: 5% 0;
 }
 .results__img{
-    width: 300px;
+    min-width: 300px;
+    max-height: 450px;
     padding: 5% 0;
 
 }

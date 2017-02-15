@@ -1,8 +1,6 @@
 var $ = require('jquery');
 var chalk = require('chalk');
-var smoothScroll = require('smooth-scroll');
 var ejs = require('ejs');
-smoothScroll.init();
 var form = $('#search-film');
 var search_field = $('#search-film-input');
 var submit = $("#search-film-submit");

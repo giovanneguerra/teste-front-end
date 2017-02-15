@@ -1,6 +1,4 @@
 var $ = require('jquery');
-var chalk = require('chalk');
-var ejs = require('ejs');
 var form = $('#search-film');
 var search_field = $('#search-film-input');
 var submit = $("#search-film-submit");
